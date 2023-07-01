@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+#Header {
+    color:#F0F8FF;
+    height: 95px;
+    background-color: #5F9EA0;
+    text-align: center;
+    padding: 10px;
+}
+
+#container {
+    min-height: 100vh;
+    background-color: #ADD8E6;
+}
+
+/* makes content flow down so the footer stays on the bottom */
+#main {
+    overflow: auto;
+}
+
+/* the container will be positioned. */
+.form-container {
+    display: none;
+}
+
+/* makes the form invisible */
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+ 
+/* makes the form visable */
+.turn-on {
+    display: block;
+}
+
+/* book card display */
+
+#Book-section {
+    display: flex;
+    flex-direction: row;
+}
+
+#card-wrapper {
+    display: flex;
+}
+
+
+#card-container {
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color:aliceblue;
+    border-radius: 8px;
+    border: 1.5px solid black;
+    height: 385px;
+    width: 340px;
+}
+
+#card-info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeBtn {
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: #20B2AA;
+    border: none;
+    color: white;
+    padding: 20px 38px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* read button styling */
+.readCheck {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid black;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: lightgreen;
+}
+
+
+/* Deals with button styling */
+
+#addBook {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.btnStyle {
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: #20B2AA;
+    border: none;
+    color: white;
+    padding: 20px 38px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.confirm-btnStyle {
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #20B2AA;
+    border: none;
+    color: white;
+    padding: 20px 38px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    background-color: #F0F8FF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 500px;
+    height: 550px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding: 10px;
+    border-radius:10px;
+    text-decoration: none;
+    width: 250px;
+    border: 1px solid black;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.08);
+}
+
+input[type=number] {
+    padding: 10px;
+    border-radius:10px;
+    text-decoration: none;
+    width: 250px;
+    border: 1px solid black;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.08);
+}
+
+
+/*styling for the checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    margin-bottom: 25px;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    /*look this up again*/
+    display: inline-block;
+    color: #666;
+    line-height: 25px;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 3px solid black;
+    background: #fff;
+}
+
+/*not working with checked */
+[type="checkbox"]:checked + label::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 3px solid #20B2AA;
+    background: #fff;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    background-image: url(./images/checkmark.jpeg);
+    background-size: contain;
+    transform: scale(1);
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    background-image: url(./images/checkmark.jpeg);
+    background-size: contain;
+    transform: scale(0);
+    opacity: 0;
+}
+
+#Footer {
+    height: 95px;
+    color:#F0F8FF;
+    background-color: #5F9EA0;
+    text-align: center;
+    padding: 10px;
+}

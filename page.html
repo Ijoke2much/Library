@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+
+    <header id="Header">
+        <h1 id="Title">Library Project</h1>
+    </header>
+
+    <div id="container">
+        <div id="main">
+            <div id="addBook">
+                <!--when the button is clicked it will use the JavaScript function addtolibrary and make the form visable-->
+                <button class="btnStyle" id="open-form">+ NEW BOOK</button>
+            </div>
+
+            <div id="Book-section">
+                <div id="card-wrapper">
+                    <!-- TEMPLATE FOR BOOK CARD -->
+                    <!-- <div id="card-container">
+                      <div id="card-info-wrap">
+                          <h2>TITLE</h2>
+                          `${title}`
+                          <h3>Author</h3>
+                          `${Author}`
+                          <h4>Pages</h4>
+                          `${pages}
+                          <div class="btnStyle" id="remove"> Remove </div>
+                      </div>
+                    </div> -->
+              </div>
+
+            </div>
+            
+        
+            <div class="form-container">
+                <!-- has the form which can take in values -->
+                <div id="form-wrapper">
+                    <form class="formElement">
+                        <!-- content for the form will show up here -->
+                        <div class="content">
+                            <H2>Title</H2>
+            
+                            <input type="text" class="book-info" id="title" name="title" placeholder="Enter book title" /required>
+                
+                            <h2>Author</h2> 
+                            <input type="text" class="book-info" id="author" name="author" placeholder="Enter the author of the book" /required>
+                
+                            <h2>Pages in the book</h2>
+                            <input type="number" class="book-info" id="pages" name="pages" placeholder="How many pages are in the book?" /required>
+                
+                            <h2>Read?</h2>
+    
+                            <p>
+                                <input type="checkbox" name="read" id="read">
+                                <label for="read"> read</label>
+                            </p>
+            
+                            <!--Closes the form to add book -->
+                            <button type='submit' class="confirm-btnStyle" id="Confirm" >Confirm</button>
+    
+                        </div>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>   
+    
+<footer id="Footer">
+    <h1>IJoke2much</h1>
+</footer>
+</body>
+<script src="index.js"></script>
+</html>
