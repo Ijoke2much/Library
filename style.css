@@ -55,12 +55,14 @@ html, body {
 
 #card-container {
     margin-top: 15px;
-    margin-left: 15px;
-    background-color:aliceblue;
+    margin-left: 125px;
+    background-color: aliceblue;
     border-radius: 8px;
-    border: 1.5px solid black;
     height: 385px;
     width: 340px;
+    box-shadow: 15px -10px rebeccapurple, 
+                27px -19px gray,
+                37px -29px teal;
 }
 
 #card-info-wrap {
@@ -96,6 +98,19 @@ html, body {
     justify-content: center;
     border-radius: 8px;
     background-color: lightgreen;
+}
+
+.notReadCheck {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid black;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: lightsalmon;
 }
 
 

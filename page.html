@@ -20,25 +20,6 @@
                 <button class="btnStyle" id="open-form">+ NEW BOOK</button>
             </div>
 
-            <div id="Book-section">
-                <div id="card-wrapper">
-                    <!-- TEMPLATE FOR BOOK CARD -->
-                    <!-- <div id="card-container">
-                      <div id="card-info-wrap">
-                          <h2>TITLE</h2>
-                          `${title}`
-                          <h3>Author</h3>
-                          `${Author}`
-                          <h4>Pages</h4>
-                          `${pages}
-                          <div class="btnStyle" id="remove"> Remove </div>
-                      </div>
-                    </div> -->
-              </div>
-
-            </div>
-            
-        
             <div class="form-container">
                 <!-- has the form which can take in values -->
                 <div id="form-wrapper">
@@ -53,7 +34,7 @@
                             <input type="text" class="book-info" id="author" name="author" placeholder="Enter the author of the book" /required>
                 
                             <h2>Pages in the book</h2>
-                            <input type="number" class="book-info" id="pages" name="pages" placeholder="How many pages are in the book?" /required>
+                            <input type="number" class="book-info" id="pages" name="pages" placeholder="How many pages are in the book?" pattern="[0-9]" /required>
                 
                             <h2>Read?</h2>
     
@@ -64,12 +45,19 @@
             
                             <!--Closes the form to add book -->
                             <button type='submit' class="confirm-btnStyle" id="Confirm" >Confirm</button>
-    
                         </div>
                     </form>
-
                 </div>
-                
+            </div>
+
+            <div id="Book-section">
+                <div id="card-wrapper">
+                    <!-- TEMPLATE FOR BOOK CARD -->
+                    <!-- <div id="card-container">
+                      <div id="card-info-wrap">
+                      </div>
+                    </div> -->
+              </div>
             </div>
         </div>
     </div>   
