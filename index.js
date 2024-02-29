@@ -15,13 +15,15 @@ let myLibrary = [];
 let newBook; // declared new variable.
 
 // dont need to do anything for this justa way to define the values in the book card.
-function Book (title, author, pages, read) {
-  // the constructor (the this stuff is the contructor)
-  // creates arrays to add to the book
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+class Book {
+  constructor(title, author, pages, read) {
+    // the constructor (the this stuff is the contructor)
+    // creates arrays to add to the book
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 }
 
 // takes the values from the form to add to the objects of the book function.
@@ -39,8 +41,8 @@ function addBookToLibrary() {
   myLibrary.push(newBook); // pushes arrays to the newBook array
   displayBooks(myLibrary, bookInfo);
   formReset()
-  readCheck();
   formToggle(); 
+  readCheck();
   // for testing
   console.log(myLibrary);
   return false; // prevents page from submitting and refreshing.

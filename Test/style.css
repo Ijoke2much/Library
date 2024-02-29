@@ -98,6 +98,19 @@ html, body {
     background-color: lightgreen;
 }
 
+.notReadCheck {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid black;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: lightsalmon;
+}
+
 
 /* Deals with button styling */
 
@@ -166,7 +179,7 @@ input[type=number] {
 
 /*styling for the checkbox */
 input[type="checkbox"] {
-    opacity: 100;
+    appearance: none;
     margin-bottom: 25px;
 }
 
